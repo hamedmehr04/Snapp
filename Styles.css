@@ -1,0 +1,757 @@
+/* 
+      Project Name : Snapp (CSS File)
+      Last update : 9/11/2023
+      Made by : Fateme, Hamed, Milad
+
+      Contact Fateme : fatememusabi@gmail.com
+      Contact Hamed : hamedmehr2004@gmail.com
+      Contact Milad : netionstwitch@gmail.com
+*/
+
+/* IRANSans font */
+@font-face {
+  font-family: IRANSans;
+  src: url(fonts/IRANSansMobile_Light.ttf) format(truetype);
+}
+
+/* IRANSans font bold edition */
+@font-face {
+  font-family: IRANSansBold;
+  src: url(fonts/IRANSansMobile.ttf) format(truetype);
+}
+
+/* Reseting the defaullt settings */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Removing the default text decoration from all links */
+a {
+  text-decoration: none;
+}
+
+/* Making the header stick to the top */
+#header-container {
+  height: 96px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 218, 218);
+  z-index: 1000;
+}
+
+/* Header main settings */
+#header {
+  position: sticky;
+  top: 0;
+  vertical-align: middle;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 100%;
+  justify-content: center;
+  height: 96px;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 15%;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+/* Header linked items */
+#header a {
+  color: #404040;
+  font-weight: lighter;
+  margin: 14px;
+  vertical-align: middle;
+  font-family: IRANSans;
+  font-size: 97%;
+}
+
+/* The SVG attached to header */
+#header img {
+  margin: 10px;
+  vertical-align: middle;
+}
+
+/* Login section */
+.login-area {
+  direction: rtl;
+  display: flex;
+  margin-top: 90px;
+  width: 100%;
+}
+
+/* Submit section which is the right side of login area */
+.sabmit-area {
+  background-color: #21aa58;
+  width: 50%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Main setting of titles in submit area */
+#submit-area-title {
+  padding-left: 10px;
+}
+
+/* Main title */
+#submit-area-title h1 {
+  color: white;
+  font-size: 36px;
+  font-family: IRANSansBold;
+  font-weight: 700;
+  margin-top: 2vw;
+  margin-right: 15vw;
+  line-height: 53px;
+}
+
+/* The extra title */
+#submit-area-extra-title {
+  margin-top: 30px;
+}
+
+/* Paragraph */
+#submit-area-extra-title p {
+  font-size: 20px;
+  color: white;
+  font-family: IRANSans;
+  line-height: 33px;
+  margin-top: 1vw;
+  margin-right: 15vw;
+}
+
+/* Phone Number Section */
+#phone-number {
+  display: flex;
+  margin-top: 1vw;
+  margin-right: 15vw;
+  align-items: center;
+}
+
+/* Number Box Styling */
+#number-box {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  height: 85%;
+  width: 16vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Phone Number Input Styles */
+#phone-number input {
+  padding: 0 8px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: inherit;
+}
+
+/* Placeholder Text in Phone Number Input */
+#number-box input::placeholder {
+  color: white;
+  font-family: IRANSans;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Remove Spin Buttons in Number Input */
+#phone-number input[type="number"]::-webkit-inner-spin-button,
+#phone-number input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Phone Number Icon Styling */
+#phone-number svg {
+  fill: white;
+  width: 10px;
+}
+
+/* Phone Number Button Section */
+#phone-number-button {
+  margin-right: 10px;
+}
+
+/* Phone Number Button Styles */
+#phone-number-button button {
+  font-family: "IRANSans";
+  font-size: 14px;
+  font-weight: 600;
+  width: 8vw;
+  padding: 10px;
+  margin-right: 0.5vw;
+  color: #00d16f;
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Application Entrance Section */
+#application-entrance {
+  margin-top: 2vw;
+  margin-right: 15vw;
+  margin-bottom: 30px;
+}
+
+/* Application Entrance Button Styles */
+#application-entrance button {
+  background-color: #21aa58;
+  border: 1px solid rgb(255, 255, 255);
+  width: 16.5vw;
+  height: 48px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#application-entrance button:hover {
+  background-color: #56bb59a9;
+}
+
+/* Application Entrance Span Styles */
+#application-entrance span {
+  color: white;
+  font-family: IRANSansBold;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Login Banner Styles */
+.login-banner {
+  background-image: url(https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg);
+  width: 50%;
+  background-position: center center;
+  transform: scaleX(-1);
+  background-size: cover;
+}
+
+/* Application Link Section Styles */
+.applinksection {
+  background-color: white;
+  height: 315px;
+  text-align: center;
+  direction: rtl;
+  padding: 0px 130px;
+}
+
+/* Application Link Section Image Styles */
+.applinksection img {
+  width: 160px;
+  height: 47px;
+}
+
+/* Last Child of Application Link Section Image Styles */
+.applinksection a:last-child img {
+  width: 160px;
+  height: 53px;
+}
+
+/* Application Link Section Child Element Styles */
+.applinksection a * {
+  margin: 135px 46px 0 46px;
+  vertical-align: middle;
+}
+
+/* Application Showcase Section Styles */
+#application-showcase {
+  background-color: #f2f5f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  direction: rtl;
+}
+
+/* Application Showcase Title Styles */
+#as-title h1 {
+  color: #404040;
+  font-size: 35px;
+  font-family: IRANSansBold;
+  margin: 40px 0px 40px;
+  font-weight: bolder;
+}
+
+/* Application Links Section Styles */
+#application-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: unset;
+  flex-wrap: wrap;
+  padding: 0px 240px 20px;
+  overflow: hidden;
+}
+
+/* Application Links Div Styles */
+#application-links div {
+  background-color: #ffffff;
+  margin: 15px;
+  width: 300px;
+  height: 70px;
+  flex-direction: row;
+  border-radius: 18px;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Application Links Image Styles */
+#application-links img {
+  margin-left: auto;
+  object-fit: contain;
+  width: 62px;
+  height: 62px;
+}
+
+/* Application Links Size Fix Styles */
+#application-links .size-fix {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Application Links Size Fix Image Styles */
+#application-links .size-fix img {
+  margin-right: 1px;
+  width: 70px;
+  height: 67px;
+}
+
+/* Application Links h2 Styles */
+#application-links h2 {
+  text-decoration: none;
+  font-family: IRANSans;
+  color: #404040;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 19px;
+  margin-right: 80px;
+  right: 1px;
+}
+
+/* Styling for application links' paragraph */
+#application-links p {
+  text-decoration: none;
+  font-family: IRANSans;
+  color: rgb(96, 96, 96);
+  opacity: 60%; /* Opacity of 60% for a semi-transparent look */
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 24px;
+  left: 2px;
+  right: 1px;
+  margin-right: 80px; /* Right margin of 80 pixels */
+}
+
+/* Styling for texts-links */
+.texts-links * {
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+#snap-superapp {
+  direction: rtl;
+  flex-direction: column;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  direction: ltr;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 13px;
+  width: 70vw;
+  height: 440px;
+  margin: 0 auto;
+  overflow: hidden; /* Hide the default scrollbar */
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 0.5rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #b8b8b867;
+  border-radius: 50px;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+
+.slider-nav a {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  opacity: 0.7;
+  transition: opacity ease 250ms;
+  text-decoration: none;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* Styling for ss-banner-adjustment section */
+.ss-banner-adjustment {
+  display: flex;
+  height: 20vw;
+  direction: rtl;
+}
+
+/* Styling for ss-banner within ss-banner-adjustment */
+.ss-banner {
+  background-image: url(images/10043.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 50%;
+  height: 133%;
+}
+
+/* Styling for ss-texts section */
+.ss-texts {
+  width: 34vw;
+  height: 400px;
+  vertical-align: middle;
+  margin-right: 38px;
+  margin-top: 30px;
+}
+
+/* Styling for headings within ss-texts */
+.ss-texts h2 {
+  font-family: IRANSansBold;
+  font-size: 22px;
+  color: #404040;
+  margin-bottom: 18px;
+}
+
+/* Styling for paragraphs within ss-texts */
+.ss-texts p {
+  font-family: IRANSans;
+  font-size: 15px;
+  color: #404040;
+  opacity: 90%; /* Opacity of 90% for a slightly transparent look */
+  line-height: 22px;
+}
+
+/* Styling for ss-benefits section */
+#ss-benefits {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Styling for div elements within first-ss-benefits section */
+.first-ss-benefits div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f2f5f8;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 19vw;
+  height: 200px;
+  max-width: 500px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* Styling for images within first-ss-benefits section */
+.first-ss-benefits img {
+  width: 210px;
+}
+
+/* Styling for div elements within second-ss-benefits section */
+.second-ss-benefits div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f2f5f8;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 19vw;
+  height: 200px;
+  max-width: 500px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* Styling for images within second-ss-benefits section */
+.second-ss-benefits img {
+  width: 210px;
+}
+
+/* Third section of the benefits */
+.third-ss-benefits div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f2f5f8;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 19vw; /* Width of the benefit box */
+  height: 200px; /* Height of the benefit box */
+  max-width: 500px; /* Maximum width for responsiveness */
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* Styling for images in the third benefit box */
+.third-ss-benefits img {
+  width: 210px; /* Width of the image */
+}
+
+/* Styling for the title in the benefits section */
+#ss-benefits h3 {
+  font-family: IRANSans;
+  font-size: 19px;
+  color: #404040;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* Styling for text in the benefits section */
+#ss-benefits p {
+  width: 19vw; /* Width of the text box */
+  max-width: 500px; /* Maximum width for responsiveness */
+  font-family: IRANSans;
+  font-size: 13px;
+  color: #404040;
+  opacity: 90%;
+  line-height: 22px;
+  margin-top: 16px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* Styling for the recruitment features section */
+.recruitment-features {
+  background: #f2f5f8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 120px;
+}
+
+/* Styling for the title of the recruitment features section */
+.rf-title {
+  font-size: 24px;
+  text-align: center;
+  font-family: IRANSansBold;
+  direction: rtl;
+  font-weight: bold;
+  width: 1000px; /* Width of the title box */
+  height: 40px; /* Height of the title box */
+  color: #404040;
+}
+
+/* Styling for the extra title in the recruitment features section */
+.rf-extra-title p {
+  font-family: IRANSans;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  padding: 0px 16px;
+  color: #404040;
+  font-size: 20px;
+}
+
+/* Styling for the login link in the recruitment features section */
+.rf-login {
+  font-family: IRANSans;
+}
+
+.rf-login a {
+  display: inline-block;
+  background-color: #00d170;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 20px 20px;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.rf-login a:hover {
+  background-color: #00de76;
+}
+
+/* Styling for the video in the recruitment features section */
+.rf-video {
+  margin-top: 30px;
+  width: 70vw; /* Width of the video box */
+  height: auto;
+}
+
+/* Styling for the video element */
+.rf-video video {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the rf-benefits section */
+#rf-benefits {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 82%; /* Width of the container */
+  max-width: 4300px; /* Maximum width for responsiveness */
+  margin-top: 65px;
+}
+
+/* Styling for individual rf-benefits boxes */
+.rf-benefits {
+  flex-basis: calc(50% - 20px); /* Basis for flex layout */
+  margin: 0px 0px;
+  background-color: white;
+  direction: rtl;
+  font-size: 100%;
+  border-radius: 18px;
+  justify-content: flex-start;
+  display: flex;
+  padding: 0px 24px;
+  margin: 15px 8px; /* Margin around each box */
+  box-sizing: border-box;
+  text-align: right;
+  width: 260px; /* Width of the benefit box */
+  height: 200px; /* Height of the benefit box */
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Styling for images within rf-benefits */
+.rf-benefits-images {
+  display: block;
+  margin-right: 5px;
+}
+
+/* Styling for images within rf-benefits */
+.rf-benefits img {
+  object-fit: contain;
+  width: 130px; /* Width of the image */
+  height: 90px; /* Height of the image */
+}
+
+/* Styling for the title within rf-benefits */
+.rf-benefits h3 {
+  font-family: IRANSansBold;
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  position: absolute;
+  top: 70px; /* Position from the top */
+  right: 170px; /* Position from the right */
+}
+
+/* Styling for text within rf-benefits */
+.rf-benefits p {
+  text-decoration: none;
+  font-family: IRANSans;
+  color: rgb(0, 0, 0);
+  opacity: 80%;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 20px; /* Margin from the top */
+  position: absolute;
+  top: 90px; /* Position from the top */
+  right: 90px; /* Position from the right */
+  margin-right: 80px; /* Margin from the right */
+  text-align: right;
+  line-height: 20px;
+}
+
+/* Styling for the footer section */
+.footer {
+  text-align: center;
+  padding: 40px 64px;
+}
+
+/* Styling for links within texts-links */
+.texts-links a {
+  margin: 7px;
+  font-family: IRANSans;
+  color: #404040;
+  margin-bottom: 20px;
+}
+
+/* Styling for the svg-links section */
+.svg-links {
+  width: 247px;
+  margin: 30px auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+
+/* Styling for specific images within svg-links */
+.svg-links img:nth-child(3) {
+  width: 34px;
+}
+
+/* Styling for images within svg-links */
+.svg-links img {
+  margin: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+/* Styling for images within licenses */
+.licenses img {
+  width: 130px;
+  height: 130px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
